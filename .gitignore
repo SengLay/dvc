@@ -1,5 +1,7 @@
-# Virtual Environment
 venv
 venv/
+
+dvcstore
+dvcstore/
 
 .DS_Store
