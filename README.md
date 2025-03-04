@@ -3,16 +3,16 @@
 ## 1. Setting up
 `Python 3.10.x` is used in this `DVC` tryout.
 
-Using following command for setting up virtual environment
-```bash
-python3.10 venv venv
-source venv/bin/activate
-```
+* Using following command for setting up virtual environment
+    ```bash
+    python3.10 venv venv
+    source venv/bin/activate
+    ```
 
-Install DVC [^2]:
-```bash
-pip install dvc
-```
+* Install DVC [^2]:
+    ```bash
+    pip install dvc
+    ```
 
 ## 2. Initialize Git and DVC (From this below [^1])
 ```bash
@@ -35,10 +35,12 @@ dvc remote add -d myremote dvcstore/
 ```
 
 > [!NOTE]  
-> DVC supports many remote storage types, including Amazon S3, NFS, SSH, Google Drive, Azure Blob Storage, and HDFS.
+> DVC supports many remote storage types, including **Amazon S3**, **NFS**, **SSH**, **Google Drive**, **Azure Blob Storage**, and **HDFS**.
 > ```bash
 > dvc remote add -d storage s3://mybucket/dvcstore
 > ```
+> To learn more about storage remotes, see the [Remote Storage Guide](https://dvc.org/doc/user-guide/data-management/remote-storage).
+
 
 ## 5. Uploading
 ```bash
@@ -51,8 +53,8 @@ git push
 dvc pull
 ```
 > [!IMPORTANT]
-> The project's `data/data.xml` file, our cache and the remote storage were all already in sync.
-> We need to **EMPTY** the **cache** and delete `data/data.xml` from our project if we want to have DVC actually moving data around.
+> * The project's `data/data.xml` file, our cache and the remote storage were all already in sync.
+> * We need to **EMPTY** the **cache** and delete `data/data.xml` from our project if we want to have DVC actually moving data around.
 
 * For Mac:
     ```bash
