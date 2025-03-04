@@ -51,7 +51,8 @@ git push
 dvc pull
 ```
 > [!IMPORTANT]
-> The project's `data/data.xml` file, our cache and the remote storage were all already in sync. We need to **EMPTY** the **cache** and delete `data/data.xml` from our project if we want to have DVC actually moving data around.
+> The project's `data/data.xml` file, our cache and the remote storage were all already in sync.
+> We need to **EMPTY** the **cache** and delete `data/data.xml` from our project if we want to have DVC actually moving data around.
 
 * For Mac:
     ```bash
@@ -70,5 +71,5 @@ dvc pull
     ```
 
 # References
-[^1] https://dvc.org/doc/start?tab=Windows-Cmd-#expand-to-simulate-a-fresh-pull
-[^2] https://pypi.org/project/dvc/
+[^1]: https://dvc.org/doc/start?tab=Windows-Cmd-#expand-to-simulate-a-fresh-pull
+[^2]: https://pypi.org/project/dvc/
